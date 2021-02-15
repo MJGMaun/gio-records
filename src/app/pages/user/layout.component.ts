@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { MatSidenav } from '@angular/material/sidenav';
 
 import { AccountService } from '../../_services';
 import { Account, Role } from '../../_models';
@@ -11,17 +12,24 @@ import { Account, Role } from '../../_models';
 })
 export class LayoutComponent implements OnInit {
 
-  Role = Role;
-  account: Account;
+  @ViewChild('sidenav') sidenav: MatSidenav;
+  isExpanded = true;
+  showSubmenu: boolean = false;
+  isShowing = false;
+  showSubSubMenu: boolean = false;
 
-  options: FormGroup;
+  constructor(private accountService: AccountService, private formBuilder: FormBuilder) { }
 
-  constructor(private accountService: AccountService, private formBuilder: FormBuilder) {
-    this.options = formBuilder.group({
-      bottom: 0,
-      fixed: true,
-      top: 0
-    });
+  mouseenter() {
+    if (!this.isExpanded) {
+      this.isShowing = true;
+    }
+  }
+
+  mouseleave() {
+    if (!this.isExpanded) {
+      this.isShowing = false;
+    }
   }
 
   logout() {
