@@ -7,6 +7,7 @@ import { LayoutComponent } from './layout.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { MytiComponent } from './landing-page/_components/myti/myti.component';
 import { NewsComponent } from './landing-page/_components/news/news.component';
+import { SubscribeComponent } from './landing-page/_components/subscribe/subscribe.component';
 
 
 
@@ -22,6 +23,7 @@ import { NewsComponent } from './landing-page/_components/news/news.component';
     LandingPageComponent,
     MytiComponent,
     NewsComponent,
+    SubscribeComponent,
   ],
   bootstrap: []
 })
