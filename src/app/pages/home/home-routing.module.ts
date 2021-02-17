@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { LayoutComponent } from './layout.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { ServicesComponent } from './services/services.component';
+import { ListenToMyMusicComponent } from './listen-to-my-music/listen-to-my-music.component';
 
 
 const routes: Routes = [
@@ -12,6 +13,7 @@ const routes: Routes = [
       children: [
           { path: '', component: LandingPageComponent },
           { path: 'services', component: ServicesComponent },
+          { path: 'listen', component: ListenToMyMusicComponent },
       ]
   }
 ];
