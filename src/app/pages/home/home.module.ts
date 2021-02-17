@@ -8,15 +8,11 @@ import { LayoutComponent } from './layout.component';
 
 // LANDING
 import { LandingPageComponent } from './landing-page/landing-page.component';
-import { MytiComponent } from './landing-page/_components/myti/myti.component';
-import { NewsComponent } from './landing-page/_components/news/news.component';
-import { SubscribeComponent } from './landing-page/_components/subscribe/subscribe.component';
-import { MerchComponent } from './landing-page/_components/merch/merch.component';
+import { MytiComponent, NewsComponent, SubscribeComponent, MerchComponent  } from './landing-page/_components';
 
 // SERVICES
 import { ServicesComponent } from './services/services.component';
-import { WhatCanIDoComponent } from './services/_components/what-can-i-do/what-can-i-do.component';
-import { ContactUsComponent } from './services/_components/contact-us/contact-us.component';
+import { WhatCanIDoComponent, ContactUsComponent } from './services/_components';
 
 // LISTEN TO MY MUSIC
 import { ListenToMyMusicComponent } from './listen-to-my-music/listen-to-my-music.component';
@@ -26,6 +22,7 @@ import 'hammerjs';
 import 'mousetrap';
 import { GalleryModule } from '@ks89/angular-modal-gallery';
 import { IgGalleryComponent } from './landing-page/_components/ig-gallery/ig-gallery.component';
+import { TrackCardsComponent } from './listen-to-my-music/_components/track-cards/track-cards.component';
 
 
 @NgModule({
@@ -49,6 +46,7 @@ import { IgGalleryComponent } from './landing-page/_components/ig-gallery/ig-gal
     WhatCanIDoComponent,
     ContactUsComponent,
     ListenToMyMusicComponent,
+    TrackCardsComponent,
   ],
   bootstrap: []
 })
