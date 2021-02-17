@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 @font-face {
     font-family: "sequelBold";
-    src: url("D:/_DEV/__/Mytikas/_GITHUB/gio-records/src/assets/fonts/Sequel Sans Bold Body.ttf");
+    src: url("../src/assets/fonts/Sequel Sans Bold Body.ttf");
 }
 /* Normalize Styles */
 body {
@@ -47,6 +47,15 @@ input {
     background-color: #000000b3;
 }
 
+textarea {
+  outline: none;
+  padding: 15px 20px;
+  border: 1px solid #e13c33;
+  min-width: 320px;
+  color: #be3029;
+  background-color: #000000b3;
+}
+
 input:focus {
     outline: none;
 }
@@ -55,11 +64,11 @@ input:focus {
     color: #be3029;
     opacity: 1; /* Firefox */
 }
-  
+
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
     color: #be3029;
 }
-  
+
 ::-ms-input-placeholder { /* Microsoft Edge */
     color: #be3029;
 }
