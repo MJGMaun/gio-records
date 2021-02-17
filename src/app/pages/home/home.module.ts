@@ -5,20 +5,28 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { LayoutComponent } from './layout.component';
+
+// LANDING
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { MytiComponent } from './landing-page/_components/myti/myti.component';
 import { NewsComponent } from './landing-page/_components/news/news.component';
 import { SubscribeComponent } from './landing-page/_components/subscribe/subscribe.component';
-import { ServicesComponent } from './services/services.component';
 import { MerchComponent } from './landing-page/_components/merch/merch.component';
+
+// SERVICES
+import { ServicesComponent } from './services/services.component';
 import { WhatCanIDoComponent } from './services/_components/what-can-i-do/what-can-i-do.component';
 import { ContactUsComponent } from './services/_components/contact-us/contact-us.component';
 
-// angular-modal-gallery 
+// LISTEN TO MY MUSIC
+import { ListenToMyMusicComponent } from './listen-to-my-music/listen-to-my-music.component';
+
+// angular-modal-gallery
 import 'hammerjs';
 import 'mousetrap';
 import { GalleryModule } from '@ks89/angular-modal-gallery';
 import { IgGalleryComponent } from './landing-page/_components/ig-gallery/ig-gallery.component';
+
 
 @NgModule({
   imports: [
@@ -40,6 +48,7 @@ import { IgGalleryComponent } from './landing-page/_components/ig-gallery/ig-gal
     IgGalleryComponent,
     WhatCanIDoComponent,
     ContactUsComponent,
+    ListenToMyMusicComponent,
   ],
   bootstrap: []
 })
