@@ -1,0 +1,106 @@
+#merch {
+    background-color: #050504;
+    text-align: center;
+    color: #c6352d;
+    padding: 45px 0;
+
+    ._container {
+        width: 1600px;
+
+        h2 {
+            font-size: 40px;
+            margin: 0 0 45px 0;
+        }
+
+        .collection {
+            text-align: center;
+
+            .item {
+                text-align: left;
+                display: inline-block;
+                width: 360px;
+                margin: 0 20px;
+                cursor: pointer;
+            
+
+                img {
+                    width: 100%;
+                }
+                span {
+                    display: block;
+                    font-size: 12px;
+                    color: #242424;
+                    margin: 10px 0 3px 0;
+                }
+
+                .rel {
+                    position: relative;
+
+                    h3 {
+                        color: #e13c33;
+                        font-family: 'Roboto', sans-serif !important;
+                        font-size: 30px;
+                        text-transform: uppercase;
+                    }
+    
+                    p {
+                        color: #e4e4e4;
+                        line-height: 25px;
+                        font-weight: 500;
+                    }
+
+                    ._btn {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        padding: 15px 20px;
+
+                    }
+                }
+            }
+
+            ._btn-dark {
+                display: inline-block;
+                margin: 20px 0 0 0;
+                background-color: #0a0a0a;
+                text-transform: uppercase;
+                font-size: 12px;
+                padding: 15px 45px;
+            }
+        }
+    }
+}
+
+img {
+    width: 100% !important;
+}
+
+
+@media (max-width: 1080px) {
+    #merch {
+        ._container {
+            
+            .collection {
+                text-align: center;
+    
+                .item {
+                    text-align: left;
+                    margin: 0 20px 30px;
+
+                    img {
+                        width: 100%;
+                    }
+
+                    .rel {
+                        span { }
+    
+                        h3 { }
+        
+                        p { }
+                    }
+
+                }
+            }
+        }
+    }
+}

@@ -62,25 +62,135 @@ nav#navbar {
 
 
 footer {
-    padding: 20px 0;
-    background-color: #191919;
+    padding: 35px 0 0;
     color: #fff;
+    background: url(../../../assets/images/filmgrain.gif);
+    background-size: cover;
+    background-position: bottom;
+    // background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 
     ._container {
-        width: 1175px;
+        width: 1600px;
 
-        .copyright {
-            font-size: 13px;
-            display: inline-block;
-        }
-        .icons {
-            display: inline-block;
-            float: right;
+        ._row {
+            .info {
+                display: inline-block;
+                width: 450px;
+                margin: 0 125px 0 0;
 
-            .fa {
-                margin: 0 15px;
+                img {
+                    width: 100px;
+                }
+
+                p {
+                    margin: 10px 0 0 0;
+                    font-size: 13px;
+                    line-height: 23px;
+                    color: #bdbdbd;
+                }
+
+                .social {
+                    display: inline-block;
+                    margin: 10px 0 0 0;
+    
+                    .item {
+                        display: inline-block;
+                        margin: 0 25px 0 0;
+                        cursor: pointer;
+    
+                        i {
+                            color: #c6352d;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+
+            .action {
+                text-transform: uppercase;
+                font-size: 14px;
+                width: 450px;
+                margin: 0 125px 0 0;
+
+                div {
+                    color: #e13c33;
+                }
+
+                p {
+                    margin: 10px 0 0 0;
+                    font-size: 13px;
+                    line-height: 23px;
+                    color: #bdbdbd;
+                    text-transform: none;
+                }
+
+                ._btn {
+                    padding: 17px 90px;
+                    color: #fff !important;
+                    margin: 15px 0 0 0;
+                    font-size: 13px;
+                    display: inline-block;
+                }
+
+                ._input-group {
+                    display: inline-block;
+                    position: relative;
+                    margin: 10px 0 0 0;
+                    input {
+                        font-size: 13px;
+                    }
+
+                    ._btn {
+                        padding: 19px;
+                        color: #fff !important;
+                        margin: 15px 0 0 0;
+                        position: absolute;
+                        top: -15px;
+                    }
+                }
+                
             }
         }
     }
+
+    .quick-links {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 13px;
+        color: #bdbdbd;
+        margin: 15px 0 0 0;
+        border-top: 1px solid #101010;
+
+        div {
+            display: inline-block;
+            padding: 20px 15px;
+            cursor: pointer;
+        }
+
+        div:hover {
+            color: #ddd;
+        }
+    }
     
+}
+
+@media (max-width: 1175px) {
+    footer {
+        ._container {
+            ._row {
+                display: unset;
+                .info {
+                    width: 100%;
+                    margin: 0 25px 0 0;
+                }
+    
+                .action {
+                    width: 100%;
+                    margin: 65px 25px 0 0;
+                }
+            }
+        }
+    }    
 }

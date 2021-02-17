@@ -9,11 +9,17 @@
             display: inline-block;
             width: 50%;
             padding: 80px 0px;
+            text-transform: uppercase;
 
             h3 {
                 color: #e13c33;
-                text-transform: uppercase;
                 font-size: 40px;
+            }
+
+            p {
+                color: #e4e4e4;
+                margin: 5px 0 0;
+                font-size: 14px;
             }
         }
 
@@ -21,11 +27,20 @@
             display: inline-block;
             width: 50%;
             padding: 90px 0px;
+
+            ._input-group {
+                font-size: 13px;
+                float: right;
+
+                input { 
+                    min-width: 350px;
+                }
+            }
         }
     }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1175px) {
     #subscribe {
         ._container {
             width: 100%;
@@ -46,6 +61,11 @@
                 display: block;
                 width: 100%;
                 padding: 5px 0px 95px;
+                
+                ._input-group {
+                    float: unset;
+                }
+
             }
         }
     }
