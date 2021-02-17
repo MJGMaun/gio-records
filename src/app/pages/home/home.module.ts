@@ -16,14 +16,13 @@ import { WhatCanIDoComponent, ContactUsComponent } from './services/_components'
 
 // LISTEN TO MY MUSIC
 import { ListenToMyMusicComponent } from './listen-to-my-music/listen-to-my-music.component';
+import { TrackCardsComponent } from './listen-to-my-music/_components';
 
 // angular-modal-gallery
 import 'hammerjs';
 import 'mousetrap';
 import { GalleryModule } from '@ks89/angular-modal-gallery';
 import { IgGalleryComponent } from './landing-page/_components/ig-gallery/ig-gallery.component';
-import { TrackCardsComponent } from './listen-to-my-music/_components/track-cards/track-cards.component';
-
 
 @NgModule({
   imports: [
