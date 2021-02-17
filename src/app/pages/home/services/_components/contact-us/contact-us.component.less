@@ -1,6 +1,6 @@
 .contact-us {
   background-image: url(../../../../../../assets/images/contact-us-bg.png);
-  height: 520px;
+  height: 595px;
   color: #fff;
   background-position: center center;
   background-size: cover;
@@ -31,11 +31,32 @@
       display: inline-flex;
       .form-input {
         margin-right: 30px;
+
+        input {
+          width: 450px;
+        }
       }
     }
 
     .bottom {
       margin-top: 25px;
+
+      .form-input {
+        textarea {
+          width: 94em;
+        }
+      }
+    }
+
+    .submit {
+      margin-top: 20px;
+      text-align: center;
+      button {
+        padding: 20px 105px;
+        background-color: #e13c33;
+        color: #fff;
+        border: #e13c33;
+      }
     }
 
 
@@ -43,5 +64,52 @@
     // left: 50%;
     // top: 53%;
     // transform: translate(-50%,-50%);
+  }
+}
+
+@media (max-width: 900px) {
+  .contact-us {
+    height: 740px;
+    background-position: right;
+
+    .header {
+      .sub-text {
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+
+    .form {
+      .top {
+        display: block;
+        .form-input {
+          margin-bottom: 10px;
+
+          input {
+            width: 100%;
+          }
+        }
+      }
+
+      .bottom {
+        .form-input {
+          textarea {
+            width: 100%;
+          }
+        }
+      }
+
+      .submit {
+        button {
+          padding: 10px 70px;
+        }
+      }
+
+
+      // position: absolute;
+      // left: 50%;
+      // top: 53%;
+      // transform: translate(-50%,-50%);
+    }
   }
 }
