@@ -1,5 +1,9 @@
 #merch {
-    background-color: #050504;
+    background-image: url(../../../../../../assets/images/brushed-bg.png);
+    background-size: cover;
+    background-position: bottom;
+    background-position: center;
+    background-repeat: no-repeat;
     text-align: center;
     color: #c6352d;
     padding: 45px 0;
@@ -99,6 +103,18 @@ img {
                         p { }
                     }
 
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    #merch {
+        ._container {
+            .collection {
+                .item {
+                    width: 90%;
                 }
             }
         }
