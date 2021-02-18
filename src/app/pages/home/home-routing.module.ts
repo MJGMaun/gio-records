@@ -15,7 +15,7 @@ const routes: Routes = [
           { path: '', component: LandingPageComponent },
           { path: 'services', component: ServicesComponent },
           { path: 'listen', component: ListenToMyMusicComponent },
-          { path: 'latest-news', component: LatestNewsComponent },
+          { path: 'news', component: LatestNewsComponent },
       ]
   }
 ];
