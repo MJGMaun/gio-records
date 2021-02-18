@@ -2,6 +2,7 @@
   background-color: #050403;
   ._container {
     width: 1600px;
+  padding-bottom: 40px;
     .header {
       text-align: center;
       font-size: 36px;
@@ -13,20 +14,22 @@
     }
 
     .card-group {
+      display: block;
       .card {
+        margin: 0 12px 24px;
+        display: inline-block;
+        width: 375px;
         cursor: pointer;
         background-color: #050403;
-        position: relative;
-        width: 27%;
         img {
-          width: 385px;
+          width: 100%;
         }
         .action {
-          display: none;
           position: absolute;
           bottom: 0;
           left: 0;
-          width: 385px;
+          width: 373px;
+          opacity: 0;
           button {
             font-size: 16px;
             font-weight: 500;
@@ -44,8 +47,6 @@
         // background-color: #1c5a73;
 
         // color: #fff;
-
-
         img {
           opacity: 0.5;
           background-color: #050403;
@@ -53,7 +54,52 @@
         }
 
         .action {
-          display: inline;
+          opacity: 1;
+          background-color: #0e3846 !important;
+          transition: background-color, opacity 0.5s;
+        }
+      }
+    }
+
+    .load-more {
+      text-align: center;
+      ._btn-dark {
+        display: inline-block;
+        margin: 20px 0 0 0;
+        background-color: #0a0a0a;
+        text-transform: uppercase;
+        font-size: 12px;
+        padding: 15px 45px;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+
+  }
+}
+
+
+@media (max-width: 900px) {
+  .track-cards {
+    ._container {
+      .card-group {
+        .card {
+          margin: 20px 0px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1190px) {
+  .track-cards {
+    ._container {
+      .card-group {
+        text-align: center;
+        .card {
+          margin: 10px 10px;
+          width: 320px;
         }
       }
     }
