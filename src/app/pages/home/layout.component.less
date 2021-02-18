@@ -127,30 +127,31 @@ footer {
                 }
 
                 ._btn {
-                    padding: 17px 90px;
+                    padding: 18px 90px;
                     color: #fff !important;
                     margin: 15px 0 0 0;
                     font-size: 13px;
                     display: inline-block;
                 }
 
-                ._input-group {
-                    display: inline-block;
-                    position: relative;
-                    margin: 10px 0 0 0;
-                    input {
-                        font-size: 13px;
-                    }
-
-                    ._btn {
-                        padding: 19px;
-                        color: #fff !important;
-                        margin: 15px 0 0 0;
-                        position: absolute;
-                        top: -15px;
+                .tx-center {
+                    ._input-group {
+                        display: inline-block;
+                        position: relative;
+                        margin: 10px 0 0 0;
+                        input {
+                            font-size: 13px;
+                        }
+    
+                        ._btn {
+                            padding: 18px;
+                            color: #fff !important;
+                            margin: 15px 0 0 0;
+                            // position: absolute;
+                            // top: -15px;
+                        }
                     }
                 }
-                
             }
         }
     }
@@ -180,7 +181,8 @@ footer {
     footer {
         ._container {
             ._row {
-                display: unset;
+                display: block;
+
                 .info {
                     width: 100%;
                     margin: 0 25px 0 0;
@@ -193,4 +195,30 @@ footer {
             }
         }
     }    
+}
+
+@media (max-width: 1175px) {
+    footer {
+        ._container {
+            ._row {
+                .info {
+
+                }
+    
+                .action {
+                    .tx-center {
+                        ._input-group {
+                            input {
+                                min-width: 230px;
+                            }
+
+                            ._btn {
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }   
 }
