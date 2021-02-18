@@ -18,6 +18,9 @@ import { WhatCanIDoComponent, ContactUsComponent } from './services/_components'
 import { ListenToMyMusicComponent } from './listen-to-my-music/listen-to-my-music.component';
 import { TrackCardsComponent } from './listen-to-my-music/_components';
 
+// NEWS
+import { LatestNewsComponent } from './latest-news/latest-news.component';
+
 // angular-modal-gallery
 import 'hammerjs';
 import 'mousetrap';
@@ -46,6 +49,7 @@ import { IgGalleryComponent } from './landing-page/_components/ig-gallery/ig-gal
     ContactUsComponent,
     ListenToMyMusicComponent,
     TrackCardsComponent,
+    LatestNewsComponent,
   ],
   bootstrap: []
 })
