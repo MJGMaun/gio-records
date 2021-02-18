@@ -11,8 +11,9 @@
   color: #c6352d;
 
   ._container {
-    padding: 50px 0 95px;
+    padding: 50px 260px 95px;
     color: #e13c33;
+    width: 1600px;
 
     h1 {
       text-align: center;
@@ -21,7 +22,7 @@
     }
 
     .service-group {
-      margin: auto 20%;
+      // margin: auto 20%;
       display: flex;
       .service {
         width: 50%;
@@ -55,6 +56,7 @@
 
   .what-can-i-do-text {
     ._container {
+      padding: 50px 0 95px !important;
       h1 {
         text-align: center;
         font-size: 36px;
@@ -91,6 +93,24 @@
       }
 
 
+    }
+  }
+}
+
+@media (max-width: 1190px) {
+  .what-can-i-do-text {
+    ._container {
+      padding: 50px 125px 95px;
+      color: #e13c33;
+      width: 1600px;
+
+      .service-group {
+        .service {
+          .service-list {
+            margin: 0%;
+          }
+        }
+      }
     }
   }
 }
