@@ -6,6 +6,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { ServicesComponent } from './services/services.component';
 import { ListenToMyMusicComponent } from './listen-to-my-music/listen-to-my-music.component';
 import { BeatsComponent } from './beats/beats.component';
+import { LatestNewsComponent } from './latest-news/latest-news.component';
 
 
 const routes: Routes = [
@@ -16,6 +17,7 @@ const routes: Routes = [
           { path: 'services', component: ServicesComponent },
           { path: 'listen', component: ListenToMyMusicComponent },
           { path: 'beats', component: BeatsComponent },
+          { path: 'news', component: LatestNewsComponent },
       ]
   }
 ];

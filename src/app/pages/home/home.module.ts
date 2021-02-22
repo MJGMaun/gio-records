@@ -23,6 +23,9 @@ import { BeatsComponent } from './beats/beats.component';
 import { ListenToMyMusicComponent } from './listen-to-my-music/listen-to-my-music.component';
 import { TrackCardsComponent } from './listen-to-my-music/_components';
 
+// NEWS
+import { LatestNewsComponent } from './latest-news/latest-news.component';
+
 // angular-modal-gallery
 import 'hammerjs';
 import 'mousetrap';
@@ -53,8 +56,12 @@ import { BeatShopComponent } from './beats/_components/beat-shop/beat-shop.compo
     ContactUsComponent,
     ListenToMyMusicComponent,
     TrackCardsComponent,
+<<<<<<< HEAD
     BeatsComponent,
     BeatShopComponent
+=======
+    LatestNewsComponent,
+>>>>>>> 407999d92bfa4b7f65135d5e81742ce3787711d7
   ],
   bootstrap: []
 })
