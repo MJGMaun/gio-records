@@ -56,12 +56,9 @@ import { BeatShopComponent } from './beats/_components/beat-shop/beat-shop.compo
     ContactUsComponent,
     ListenToMyMusicComponent,
     TrackCardsComponent,
-<<<<<<< HEAD
     BeatsComponent,
-    BeatShopComponent
-=======
-    LatestNewsComponent,
->>>>>>> 407999d92bfa4b7f65135d5e81742ce3787711d7
+    BeatShopComponent,
+    LatestNewsComponent
   ],
   bootstrap: []
 })
