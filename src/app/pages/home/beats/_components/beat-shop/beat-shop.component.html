@@ -1,1 +1,33 @@
-<p>beat-shop works!</p>
+<div id="beat-shop">
+    <div class="_container">
+        <h2>Shop for Beats</h2>
+
+        <div class="shop p-shadow-11">
+            <div class="header">
+                <div class="p-grid">
+                    <div class="p-col">
+                        <input type="text" placeholder="SEARCH TRACK TYPES" pInputText />
+                    </div>
+                    <div class="p-col-fixed" style="width:auto">
+                        <button pButton type="button" label="$0.00" icon="pi pi-shopping-cart" class="p-button"></button>
+                        <button pButton type="button" label="Login" class="p-button _btn-dark"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="playing">
+                <div class="actions">
+                    <button pButton type="button" label="Share" icon="pi pi-share-alt" class="p-button _btn-transparent"></button>
+                    <button pButton type="button" label="Add to cart" icon="pi pi-shopping-cart" class="p-button"></button>
+                </div>
+            </div>
+            <div class="main">
+                <div class="filter">
+                    <div>
+                        <p-dropdown [options]="cities" [(ngModel)]="selectedCity1" placeholder="Select a City" optionLabel="name" [showClear]="true"></p-dropdown>
+                        <p-dropdown [options]="cities" [(ngModel)]="selectedCity1" placeholder="Select a City" optionLabel="name" [showClear]="true"></p-dropdown>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
