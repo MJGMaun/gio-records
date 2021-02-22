@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from './shared/material/material.module';
+import { PrimengModule } from './shared/material/primeng.module';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 // used to create fake backend
@@ -24,7 +25,8 @@ import { AlertComponent } from './_components';
         HttpClientModule,
         FormsModule,
         AppRoutingModule,
-        MaterialModule
+        MaterialModule,
+        PrimengModule
     ],
     declarations: [
         AppComponent,

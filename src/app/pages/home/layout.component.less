@@ -57,6 +57,11 @@ nav#navbar {
                 }
             }
         }
+
+        .sidebar-toggle {
+            display: none;
+            float: right;
+        }
     }
 }
 
@@ -178,11 +183,25 @@ footer {
 }
 
 @media (max-width: 1175px) {
+    nav#navbar {
+        ._container {
+            .brand {
+            }
+            .aside {
+                display: none;
+            }
+    
+            .sidebar-toggle {
+                display: inline-block;
+
+            }
+        }
+    }
+
     footer {
         ._container {
             ._row {
                 display: block;
-
                 .info {
                     width: 100%;
                     margin: 0 25px 0 0;
@@ -191,21 +210,6 @@ footer {
                 .action {
                     width: 100%;
                     margin: 65px 25px 0 0;
-                }
-            }
-        }
-    }    
-}
-
-@media (max-width: 1175px) {
-    footer {
-        ._container {
-            ._row {
-                .info {
-
-                }
-    
-                .action {
                     .tx-center {
                         ._input-group {
                             input {

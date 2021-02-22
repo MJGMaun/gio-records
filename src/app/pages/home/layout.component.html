@@ -49,8 +49,17 @@
                 </div>
             </div>
         </div>
+        <p-button class="sidebar-toggle" type="button" (click)="visibleSidebar = true" icon="pi pi-arrow-left"></p-button>
     </div>
 </nav>
+
+<p-sidebar [(visible)]="visibleSidebar" position="right" [baseZIndex]="10000">
+    <h1 style="font-weight:normal">Right Sidebar</h1>
+    <p-button type="button" (click)="visibleSidebar = false" label="Save" styleClass="p-button-success"></p-button>
+    <p-button type="button" (click)="visibleSidebar = false" label="Cancel" styleClass="p-button-secondary"></p-button>
+</p-sidebar>
+
+
 <router-outlet></router-outlet>
 
 <footer>

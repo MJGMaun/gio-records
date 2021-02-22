@@ -2,17 +2,22 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 // import { MaterialModule } from '../../shared/material/material.module';
+import { PrimengModule } from '../../shared/material/primeng.module';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { LayoutComponent } from './layout.component';
 
 // LANDING
 import { LandingPageComponent } from './landing-page/landing-page.component';
-import { MytiComponent, NewsComponent, SubscribeComponent, MerchComponent  } from './landing-page/_components';
+import { MytiComponent, NewsComponent, SubscribeComponent, MerchComponent, IgGalleryComponent  } from './landing-page/_components';
 
 // SERVICES
 import { ServicesComponent } from './services/services.component';
 import { WhatCanIDoComponent, ContactUsComponent } from './services/_components';
+
+// BEATS
+import { BeatsComponent } from './beats/beats.component';
+// import { WhatCanIDoComponent, ContactUsComponent } from './beats/_components';
 
 // LISTEN TO MY MUSIC
 import { ListenToMyMusicComponent } from './listen-to-my-music/listen-to-my-music.component';
@@ -22,7 +27,8 @@ import { TrackCardsComponent } from './listen-to-my-music/_components';
 import 'hammerjs';
 import 'mousetrap';
 import { GalleryModule } from '@ks89/angular-modal-gallery';
-import { IgGalleryComponent } from './landing-page/_components/ig-gallery/ig-gallery.component';
+import { BeatShopComponent } from './beats/_components/beat-shop/beat-shop.component';
+
 
 @NgModule({
   imports: [
@@ -30,8 +36,9 @@ import { IgGalleryComponent } from './landing-page/_components/ig-gallery/ig-gal
     HomeRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    GalleryModule.forRoot()
-    // MaterialModule
+    GalleryModule.forRoot(),
+    // MaterialModule,
+    PrimengModule
   ],
   declarations: [
     LayoutComponent,
@@ -46,6 +53,8 @@ import { IgGalleryComponent } from './landing-page/_components/ig-gallery/ig-gal
     ContactUsComponent,
     ListenToMyMusicComponent,
     TrackCardsComponent,
+    BeatsComponent,
+    BeatShopComponent
   ],
   bootstrap: []
 })

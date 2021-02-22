@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LayoutComponent implements OnInit {
   activeTab = 'home';
+  visibleSidebar;
   Company_Employees: any = [];
+  
 
   constructor() { }
 
