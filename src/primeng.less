@@ -3062,7 +3062,8 @@ p-togglebutton.ng-dirty.ng-invalid > .p-togglebutton.p-button {
 
 .p-accordion .p-accordion-header .p-accordion-header-link {
   padding: 1rem;
-  border: 1px solid #383838;
+  border: none;
+  margin-top: 10px;
   color: rgba(255, 255, 255, 0.87);
   background-color: #0a0a0a;
   font-weight: 600;
@@ -3070,12 +3071,14 @@ p-togglebutton.ng-dirty.ng-invalid > .p-togglebutton.p-button {
   transition: box-shadow 0.2s;
 }
 .p-accordion .p-accordion-header .p-accordion-header-link .p-accordion-toggle-icon {
-  margin-right: 0.5rem;
+    margin-right: 0.5rem;
+    position: absolute;
+    right: 0;
 }
 .p-accordion .p-accordion-header:not(.p-disabled) .p-accordion-header-link:focus {
   outline: 0 none;
   outline-offset: 0;
-  box-shadow: 0 0 0 1px #bd322b;
+
 }
 .p-accordion .p-accordion-header:not(.p-highlight):not(.p-disabled):hover .p-accordion-header-link {
   background: rgba(255, 255, 255, 0.03);
@@ -3088,15 +3091,19 @@ p-togglebutton.ng-dirty.ng-invalid > .p-togglebutton.p-button {
   color: rgba(255, 255, 255, 0.87);
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
+  background-color: #bd322b;
 }
 .p-accordion .p-accordion-header:not(.p-disabled).p-highlight:hover .p-accordion-header-link {
   border-color: #383838;
   background: rgba(255, 255, 255, 0.03);
   color: rgba(255, 255, 255, 0.87);
+  background-color: #bd322b;
 }
+
 .p-accordion .p-accordion-content {
   padding: 1rem;
-  border: 1px solid #383838;
+  border: none;
+  margin-top: 10px;
   background-color: #0a0a0a;
   color: rgba(255, 255, 255, 0.87);
   border-top: 0;
@@ -3104,6 +3111,9 @@ p-togglebutton.ng-dirty.ng-invalid > .p-togglebutton.p-button {
   border-top-left-radius: 0;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
+  border: 1px  solid #bd322b;
+  text-align: left;
+  font-size: 14px;
 }
 .p-accordion p-accordiontab .p-accordion-tab {
   margin-bottom: 0;
@@ -3121,16 +3131,16 @@ p-togglebutton.ng-dirty.ng-invalid > .p-togglebutton.p-button {
   border-top: 0 none;
 }
 .p-accordion p-accordiontab:first-child .p-accordion-header .p-accordion-header-link {
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
 }
 .p-accordion p-accordiontab:last-child .p-accordion-header:not(.p-highlight) .p-accordion-header-link {
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 .p-accordion p-accordiontab:last-child .p-accordion-content {
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 .p-card {

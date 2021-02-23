@@ -19,6 +19,7 @@ import { WhatCanIDoComponent, ContactUsComponent } from './services/_components'
 import { BeatsComponent } from './beats/beats.component';
 import { BeatShopComponent } from './beats/_components/beat-shop/beat-shop.component';
 import { LicensingComponent } from './beats/_components/licensing/licensing.component';
+import { FaqComponent } from './beats/_components/faq/faq.component';
 // import { WhatCanIDoComponent, ContactUsComponent } from './beats/_components';
 
 // LISTEN TO MY MUSIC
@@ -35,6 +36,7 @@ import { BlogComponent } from './blog/blog.component';
 import 'hammerjs';
 import 'mousetrap';
 import { GalleryModule } from '@ks89/angular-modal-gallery';
+
 
 
 
@@ -65,6 +67,7 @@ import { GalleryModule } from '@ks89/angular-modal-gallery';
     BeatShopComponent,
     LatestNewsComponent,
     LicensingComponent,
+    FaqComponent,
     BlogComponent
   ],
   bootstrap: []
