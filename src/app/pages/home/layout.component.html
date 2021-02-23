@@ -1,6 +1,6 @@
 <nav id="navbar">
     <div class="_container">
-        <div class="brand">
+        <div class="brand" routerLink="/">
             <img src="../../../assets/images/GIO_LOGO_WHT.png" alt="">
         </div>
         <div class="aside">
@@ -18,7 +18,7 @@
                     <a href="#" routerLink="/services">Services</a>
                 </div>
                 <div class="item">
-                    <a href="#">Buy my beats</a>
+                    <a href="#" routerLink="/beats">Buy my beats</a>
                 </div>
                 <div class="item">
                     <a href="#">Merch</a>
@@ -97,9 +97,9 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt.</p>
                 <div>
-                    <div class="_input-group">
-                        <input type="text" placeholder="ENTER EMAIL ADDRESS (REQUIRED)">
-                        <div class="_btn"><i class="fa fa-arrow-right"></i></div>
+                    <div class="p-inputgroup">
+                        <input class="_input" type="text" placeholder="EMAIL ADDRESS (REQUIRED)" pInputText />
+                        <button type="button" pButton pRipple icon="pi pi-arrow-right"></button>   
                     </div>
                 </div>
             </div>
