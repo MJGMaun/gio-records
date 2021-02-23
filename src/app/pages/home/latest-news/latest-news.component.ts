@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./latest-news.component.less']
 })
 export class LatestNewsComponent implements OnInit {
+  pageTitle = 'Latest News'
 
   constructor() { }
 
