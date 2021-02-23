@@ -32,6 +32,7 @@ import { LatestNewsComponent } from './latest-news/latest-news.component';
 import 'hammerjs';
 import 'mousetrap';
 import { GalleryModule } from '@ks89/angular-modal-gallery';
+import { FaqComponent } from './beats/_components/faq/faq.component';
 
 
 
@@ -61,7 +62,8 @@ import { GalleryModule } from '@ks89/angular-modal-gallery';
     BeatsComponent,
     BeatShopComponent,
     LatestNewsComponent,
-    LicensingComponent
+    LicensingComponent,
+    FaqComponent
   ],
   bootstrap: []
 })
