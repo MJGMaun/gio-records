@@ -28,6 +28,9 @@ import { TrackCardsComponent } from './listen-to-my-music/_components';
 // NEWS
 import { LatestNewsComponent } from './latest-news/latest-news.component';
 
+// BLOG
+import { BlogComponent } from './blog/blog.component';
+
 // angular-modal-gallery
 import 'hammerjs';
 import 'mousetrap';
@@ -61,7 +64,8 @@ import { GalleryModule } from '@ks89/angular-modal-gallery';
     BeatsComponent,
     BeatShopComponent,
     LatestNewsComponent,
-    LicensingComponent
+    LicensingComponent,
+    BlogComponent
   ],
   bootstrap: []
 })
