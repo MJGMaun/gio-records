@@ -6,7 +6,7 @@
             <div class="header">
                 <div class="p-grid">
                     <div class="p-col">
-                        <input type="text" placeholder="SEARCH TRACK TYPES" pInputText />
+                        <input type="text" placeholder="SEARCH TRACK TYPES" pInputText class="_input" />
                     </div>
                     <div class="p-col-fixed" style="width:auto">
                         <button pButton type="button" label="$0.00" icon="pi pi-shopping-cart" class="p-button"></button>
@@ -21,12 +21,39 @@
                 </div>
             </div>
             <div class="main">
-                <div class="filter">
+                <div class="filter tx-right">
                     <div>
-                        <p-dropdown [options]="cities" [(ngModel)]="selectedCity1" placeholder="Select a City" optionLabel="name" [showClear]="true"></p-dropdown>
-                        <p-dropdown [options]="cities" [(ngModel)]="selectedCity1" placeholder="Select a City" optionLabel="name" [showClear]="true"></p-dropdown>
+                        <p-dropdown [options]="bpm" [(ngModel)]="selectedBPM" placeholder="BPM: All" optionLabel="name" [showClear]="true"></p-dropdown>
+                        <p-dropdown [options]="mood" [(ngModel)]="selectedMood" placeholder="Mood: All" optionLabel="name" [showClear]="true"></p-dropdown>
                     </div>
                 </div>
+                <p-table [value]="products">
+                    <ng-template pTemplate="header">
+                        <tr>
+                            <th width="20px"></th>
+                            <th width="50px"></th>
+                            <th width="400px">Title</th>
+                            <th>BPM</th>
+                            <th>Mood</th>
+                            <th>Time</th>
+                            <th>-</th>
+                        </tr>
+                    </ng-template>
+                    <ng-template pTemplate="body" let-product>
+                        <tr>
+                            <td>{{product.id}}</td>
+                            <td><img src="{{product.img}}" alt="" width="30px"></td>
+                            <td>{{product.title}}</td>
+                            <td>{{product.bpm}}</td>
+                            <td>{{product.mood}}</td>
+                            <td>{{product.title}}</td>
+                            <td>
+                                <button pButton type="button" icon="pi pi-share-alt" class="p-button _btn-transparent"></button>
+                                <button pButton type="button" label="Add to cart" icon="pi pi-shopping-cart" class="p-button p-button-sm"></button>
+                            </td>
+                        </tr>
+                    </ng-template>
+                </p-table>
             </div>
         </div>
     </div>

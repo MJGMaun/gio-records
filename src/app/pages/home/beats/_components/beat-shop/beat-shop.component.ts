@@ -6,79 +6,64 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./beat-shop.component.less']
 })
 export class BeatShopComponent implements OnInit {
-  cities: any[];
+  bpm: any[];
+  mood: any[];
 
-  selectedCity1: any;
+  selectedBPM;
+  selectedMood;
 
-  selectedCity2: any;
-
-  selectedCity3: string;
-
-  selectedCountry: string;
-
-  countries: any[];
-
-  groupedCities: any[];
-
-  items: any[];
-
-  item: string;
+  products: any[];
 
   constructor() {
-    this.items = [];
-    for (let i = 0; i < 10000; i++) {
-        this.items.push({label: 'Item ' + i, value: 'Item ' + i});
-    }
 
-    this.cities = [
-        {name: 'New York', code: 'NY'},
-        {name: 'Rome', code: 'RM'},
-        {name: 'London', code: 'LDN'},
-        {name: 'Istanbul', code: 'IST'},
-        {name: 'Paris', code: 'PRS'}
+    this.bpm = [
+        {name: '170', code: '170'},
+        {name: '180', code: '180'},
+        {name: '190', code: '190'},
+        {name: '200', code: '200'},
+        {name: '210', code: '210'}
     ];
 
-    this.groupedCities = [
-        {
-            label: 'Germany', value: 'de', 
-            items: [
-                {label: 'Berlin', value: 'Berlin'},
-                {label: 'Frankfurt', value: 'Frankfurt'},
-                {label: 'Hamburg', value: 'Hamburg'},
-                {label: 'Munich', value: 'Munich'}
-            ]
-        },
-        {
-            label: 'USA', value: 'us', 
-            items: [
-                {label: 'Chicago', value: 'Chicago'},
-                {label: 'Los Angeles', value: 'Los Angeles'},
-                {label: 'New York', value: 'New York'},
-                {label: 'San Francisco', value: 'San Francisco'}
-            ]
-        },
-        {
-            label: 'Japan', value: 'jp', 
-            items: [
-                {label: 'Kyoto', value: 'Kyoto'},
-                {label: 'Osaka', value: 'Osaka'},
-                {label: 'Tokyo', value: 'Tokyo'},
-                {label: 'Yokohama', value: 'Yokohama'}
-            ]
-        }
+    this.mood = [
+        {name: 'Funk', code: 'Funk'},
+        {name: 'RNB', code: 'RNB'},
+        {name: 'Rock', code: 'Rock'},
+        {name: 'Pop', code: 'Pop'},
     ];
 
-    this.countries = [
-        {name: 'Australia', code: 'AU'},
-        {name: 'Brazil', code: 'BR'},
-        {name: 'China', code: 'CN'},
-        {name: 'Egypt', code: 'EG'},
-        {name: 'France', code: 'FR'},
-        {name: 'Germany', code: 'DE'},
-        {name: 'India', code: 'IN'},
-        {name: 'Japan', code: 'JP'},
-        {name: 'Spain', code: 'ES'},
-        {name: 'United States', code: 'US'}
+    this.products = [
+        {
+            id: 1, 
+            img: 'https://via.placeholder.com/150', 
+            title: "Title",
+            bpm: "123",
+            mood: "Cool",
+            time: "1:50"
+        },
+        {
+            id: 2, 
+            img: 'https://via.placeholder.com/150', 
+            title: "Title",
+            bpm: "123",
+            mood: "Cool",
+            time: "1:50"
+        },
+        {
+            id: 3, 
+            img: 'https://via.placeholder.com/150', 
+            title: "Title",
+            bpm: "123",
+            mood: "Cool",
+            time: "1:50"
+        },
+        {
+            id: 4, 
+            img: 'https://via.placeholder.com/150', 
+            title: "Title",
+            bpm: "123",
+            mood: "Cool",
+            time: "1:50"
+        },
     ];
   }
 

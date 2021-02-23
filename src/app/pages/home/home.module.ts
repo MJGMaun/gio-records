@@ -17,6 +17,8 @@ import { WhatCanIDoComponent, ContactUsComponent } from './services/_components'
 
 // BEATS
 import { BeatsComponent } from './beats/beats.component';
+import { BeatShopComponent } from './beats/_components/beat-shop/beat-shop.component';
+import { LicensingComponent } from './beats/_components/licensing/licensing.component';
 // import { WhatCanIDoComponent, ContactUsComponent } from './beats/_components';
 
 // LISTEN TO MY MUSIC
@@ -30,7 +32,7 @@ import { LatestNewsComponent } from './latest-news/latest-news.component';
 import 'hammerjs';
 import 'mousetrap';
 import { GalleryModule } from '@ks89/angular-modal-gallery';
-import { BeatShopComponent } from './beats/_components/beat-shop/beat-shop.component';
+
 
 
 @NgModule({
@@ -58,7 +60,8 @@ import { BeatShopComponent } from './beats/_components/beat-shop/beat-shop.compo
     TrackCardsComponent,
     BeatsComponent,
     BeatShopComponent,
-    LatestNewsComponent
+    LatestNewsComponent,
+    LicensingComponent
   ],
   bootstrap: []
 })

@@ -16,7 +16,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif !important;
-    font-size: 15px;
+    font-size: 13px;
     height: 100%;
 }
 
@@ -47,69 +47,16 @@ p {
 }
 
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #be3029;
-    opacity: 1; /* Firefox */
-}
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #be3029;
-}
-
-::-ms-input-placeholder { /* Microsoft Edge */
-    color: #be3029;
-}
-
-
-// PrimeNG 
-:focus { 
-    outline:0 !important;
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
-}
-
-input, textarea {
-    padding: 15px 20px !important;
-    border: 1px solid #e13c33 !important;
-    width: 290px;
-}
-
-.p-button {
-    padding: 15px 25px !important;
-    border-radius: 0px !important;
-    border: none !important;
-    font-size: 13px !important;
-    font-family: "Roboto" !important;
-    color: #fff;
-    background: #e13c33 !important;
-}
-
-.p-inputtext, .p-dropdown {
-    color: #be3029 !important;
-    background-color: #000000b3 !important;
-    font-size: 13px !important;
-    font-family: "Roboto" !important;
-}
-
-.p-dropdown {
-    width: 205px;
-    padding: 5px 10px !important;
-    text-align: left;
-    outline: 0 !important;
-    border: none !important;
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
-}
-
-.p-dropdown-panel {
-    background: #1e1e1e !important;
-    border: none;
-    font-size: 13px;
-}
 
 
 /* Elements */
 .tx-upr { text-transform: uppercase; }
 .tx-center {
     text-align: center;
+}
+.tx-right {
+    text-align: right;
 }
 
 /* Templates */
@@ -142,7 +89,6 @@ input, textarea {
 ._btn {
     background: #e13c33;
     padding: 15px 25px;
-    border-radius: 0px;
     line-height: initial;
     outline: none;
     border: none;
@@ -153,15 +99,11 @@ input, textarea {
 }
 
 ._btn-dark {
-    background-color: #0a0a0a !important;
+    background-color: #0c0c0c !important;
 }
 
 ._btn-transparent {
     background-color: transparent !important;
-}
-
-._btn:hover {
-    background: #cf2a21;
 }
 
 ._btn:focus {
@@ -169,7 +111,8 @@ input, textarea {
 }
 
 ._input {
-
+    padding: 15px 20px;
+    background-color: #000000;
 }
 
 
