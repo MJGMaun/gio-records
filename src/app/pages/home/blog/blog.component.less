@@ -18,12 +18,13 @@
   .blog-content {
     background-image: url(../../../../assets/images/blog-bg.png);
     height: auto;
+    padding: 35px 0 80px;
 
     .blog-header {
         ._container {
           width: 1280px;
         .date {
-          padding: 35px 0 5px;
+          padding-bottom: 5px;
           color: #848383;
         }
         h1 {
@@ -52,6 +53,34 @@
         width: 1280px;
         .blog-html {
           color: #e4e4e4;
+        }
+      }
+    }
+
+    .action {
+      ._container {
+        width: 1300px;
+        text-transform: uppercase;
+        .previous-blog, .next-blog {
+          button {
+            color: #e13c33;
+          }
+          .title {
+            color: #e4e4e4;
+            font-size: 14px;
+            word-wrap: break-word;
+          }
+        }
+
+        .next-blog {
+          text-align: right;
+          button {
+            float: right;
+          }
+          .title {
+            position: relative;
+            top: 14px;
+          }
         }
       }
     }
