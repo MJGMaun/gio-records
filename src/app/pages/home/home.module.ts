@@ -36,6 +36,7 @@ import { BlogComponent } from './blog/blog.component';
 import 'hammerjs';
 import 'mousetrap';
 import { GalleryModule } from '@ks89/angular-modal-gallery';
+import { InfoComponent } from './beats/_components/info/info.component';
 
 
 
@@ -68,7 +69,8 @@ import { GalleryModule } from '@ks89/angular-modal-gallery';
     LatestNewsComponent,
     LicensingComponent,
     FaqComponent,
-    BlogComponent
+    BlogComponent,
+    InfoComponent
   ],
   bootstrap: []
 })
