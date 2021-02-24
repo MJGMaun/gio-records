@@ -5,8 +5,12 @@
     <div class="p-grid news-group top-news">
         <div class="p-col-12 p-lg-6 p-md-6 news-item">
           <div class="news-image">
-            <!-- <img src="../../../../assets/images/gio-records-bts.png"> -->
-            <iframe src="https://www.youtube.com/embed/ssq6X6alZ3w?rel=0" frameborder="0" allowfullscreen></iframe>
+            <div class="thumbnail">
+              <img src="../../../../assets/images/gio-records-bts.png">
+            </div>
+            <div class="action" (click)="showModalDialog()">
+              <img src="../../../../assets/images/play-button.png">
+            </div>
           </div>
           <div class="news-text">
             <div class="date">05 Jan 2021</div>
@@ -15,12 +19,16 @@
         </div>
         <div class="p-col-12 p-lg-6 p-md-6 news-item">
           <div class="news-image">
-            <!-- <img src="../../../../assets/images/get-what-i-want-lyric-video.png"> -->
-            <iframe src="https://www.youtube.com/embed/B6_iQvaIjXw?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="thumbnail">
+              <img src="../../../../assets/images/gio-records-bts.png">
+            </div>
+            <div class="action" (click)="showModalDialog()">
+              <img src="../../../../assets/images/play-button.png">
+            </div>
           </div>
           <div class="news-text">
             <div class="date">05 Jan 2021</div>
-            <h1 class="title">GET WHAT I WANT - (LYRIC VIDEO)</h1>
+            <h1 class="title">GIO RECORDS STUDIO - (BEHIND THE SCENES)</h1>
           </div>
         </div>
     </div>
@@ -28,8 +36,8 @@
    <div class="p-grid news-group other-news">
         <div class="p-col-12 p-md-6 p-lg-3 news-item">
           <div class="news-image">
-            <!-- <img src="../../../../assets/images/gio-records-bts.png"> -->
-            <iframe src="https://www.youtube.com/embed/1ozGKlOzEVc?rel=0" frameborder="0" allowfullscreen></iframe>
+            <img src="../../../../assets/images/blog-img-2.png">
+            <!-- <iframe src="https://www.youtube.com/embed/1ozGKlOzEVc?rel=0" frameborder="0" allowfullscreen></iframe> -->
           </div>
           <div class="news-text">
             <div class="date">05 Jan 2021</div>
@@ -38,8 +46,8 @@
         </div>
         <div class="p-col-12 p-md-6 p-lg-3 news-item">
           <div class="news-image">
-            <!-- <img src="../../../../assets/images/get-what-i-want-lyric-video.png"> -->
-            <iframe src="https://www.youtube.com/embed/B6_iQvaIjXw?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <img src="../../../../assets/images/blog-img-3.png">
+            <!-- <iframe src="https://www.youtube.com/embed/B6_iQvaIjXw?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
           </div>
           <div class="news-text">
             <div class="date">05 Jan 2021</div>
@@ -88,8 +96,8 @@
         </div>
         <div class="p-col-12 p-md-6 p-lg-3 news-item">
           <div class="news-image">
-            <!-- <img src="../../../../assets/images/get-what-i-want-lyric-video.png"> -->
-            <iframe  height="315" src="https://www.youtube.com/embed/B6_iQvaIjXw?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <img src="../../../../assets/images/blog-img-2.png">
+            <!-- <iframe  height="315" src="https://www.youtube.com/embed/B6_iQvaIjXw?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
           </div>
           <div class="news-text">
             <div class="date">05 Jan 2021</div>
@@ -98,8 +106,8 @@
         </div>
         <div class="p-col-12 p-md-6 p-lg-3 news-item">
           <div class="news-image">
-            <!-- <img src="../../../../assets/images/get-what-i-want-lyric-video.png"> -->
-            <iframe src="https://www.youtube.com/embed/B6_iQvaIjXw?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <img src="../../../../assets/images/blog-img-3.png">
+            <!-- <iframe src="https://www.youtube.com/embed/B6_iQvaIjXw?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
           </div>
           <div class="news-text">
             <div class="date">05 Jan 2021</div>
@@ -111,5 +119,10 @@
     <div class="load-more">
       <div class="_btn-dark">LOAD MORE</div>
     </div>
+
   </div>
 </div>
+
+<p-dialog [(visible)]="displayModal" [modal]="true" [style]="{'width': '75vw', 'height': '5000px'}" [baseZIndex]="10000" [draggable]="false" [resizable]="true" [dismissableMask]="true">
+    <iframe src="https://www.youtube.com/embed/B6_iQvaIjXw?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+</p-dialog>

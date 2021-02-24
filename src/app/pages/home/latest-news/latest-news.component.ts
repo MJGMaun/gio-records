@@ -13,4 +13,10 @@ export class LatestNewsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  displayModal: boolean;
+
+  showModalDialog() {
+    this.displayModal = true;
+  }
+
 }
