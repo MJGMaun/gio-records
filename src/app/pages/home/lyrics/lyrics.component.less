@@ -1,0 +1,83 @@
+.latest-news {
+  .header {
+    background-image: url(../../../../assets/images/lyrics-header.png);
+    width: 100%;
+    height: 360px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(75%);
+
+    .header-content {
+      position: absolute;
+      text-transform: uppercase;
+      bottom: 50px;
+      left: 310px;
+      line-height: 30px;
+        ._container {
+          // width: 920px;
+          width: 60%;
+          .description {
+            color: #afafaf;
+          }
+          h1 {
+            font-size: 35px;
+            color: #e13c33;
+            text-transform: uppercase;
+          }
+          .date {
+            color: #afafaf;
+          }
+      }
+    }
+
+    .track {
+      width: 40%;
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  .blog-content {
+    background-image: url(../../../../assets/images/blog-bg.png);
+    height: auto;
+    padding: 35px 0 80px;
+    font-size: 18px;
+
+    ._container {
+        width: 60%;
+        padding: 0 0 0 310px;
+        margin: unset;
+        .blog-html {
+          color: #e4e4e4;
+        }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .header {
+    height: 200px !important;
+  }
+
+  .blog-content {
+    background-image: url(../../../../assets/images/blog-bg.png);
+    height: auto;
+
+    .blog-header {
+        ._container {
+        .date {
+          font-size: 15px;
+        }
+        h1 {
+          font-size: 25px !important;
+        }
+      }
+    }
+
+  }
+
+  .blog-body {
+    margin: 25px 0 160px !important;
+  }
+}

@@ -32,6 +32,9 @@ import { LatestNewsComponent } from './latest-news/latest-news.component';
 // BLOG
 import { BlogComponent } from './blog/blog.component';
 
+// LYRICS
+import { LyricsComponent } from './lyrics/lyrics.component';
+
 // angular-modal-gallery
 import 'hammerjs';
 import 'mousetrap';
@@ -70,7 +73,8 @@ import { InfoComponent } from './beats/_components/info/info.component';
     LicensingComponent,
     FaqComponent,
     BlogComponent,
-    InfoComponent
+    InfoComponent,
+    LyricsComponent
   ],
   bootstrap: []
 })

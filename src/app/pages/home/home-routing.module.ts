@@ -8,6 +8,7 @@ import { ListenToMyMusicComponent } from './listen-to-my-music/listen-to-my-musi
 import { BeatsComponent } from './beats/beats.component';
 import { LatestNewsComponent } from './latest-news/latest-news.component';
 import { BlogComponent } from './blog/blog.component';
+import { LyricsComponent } from './lyrics/lyrics.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,7 @@ const routes: Routes = [
           { path: 'beats', component: BeatsComponent },
           { path: 'news', component: LatestNewsComponent },
           { path: 'blog', component: BlogComponent },
+          { path: 'lyrics', component: LyricsComponent },
       ]
   }
 ];
