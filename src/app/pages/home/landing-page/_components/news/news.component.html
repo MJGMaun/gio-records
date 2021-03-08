@@ -2,36 +2,11 @@
     <div class="_container">
         <h2>NEWS</h2>
         <div class=" blogs p-grid">
-            <div class="item p-col-12 p-md-6 p-lg-3">
-                <img src="../../../../../../assets/images/blog-img.png" alt="">
-                <span>04 Jan 2021</span>
-                <h3>Blog post title one</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor...</p>
-            </div>
-
-            <div class="item p-col-12 p-md-6 p-lg-3">
-                <img src="../../../../../../assets/images/blog-img-2.png" alt="">
-                <span>04 Jan 2021</span>
-                <h3>Blog post title one</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor...</p>
-            </div>
-
-            <div class="item p-col-12 p-md-6 p-lg-3">
-                <img src="../../../../../../assets/images/blog-img-3.png" alt="">
-                <span>04 Jan 2021</span>
-                <h3>Blog post title one</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor...</p>
-            </div>
-
-            <div class="item p-col-12 p-md-6 p-lg-3">
-                <img src="../../../../../../assets/images/blog-img-4.png" alt="">
-                <span>04 Jan 2021</span>
-                <h3>Blog post title one</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor...</p>
+            <div class="item p-col-12 p-md-6 p-lg-3" *ngFor="let news of recentNews">
+                <img src="{{ news.image }}" alt="">
+                <span>{{ news.date }}</span>
+                <h3>{{ news.title }}</h3>
+                <p>{{ news.summary }}</p>
             </div>
         </div>
     </div>
