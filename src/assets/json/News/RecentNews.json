@@ -1,26 +1,26 @@
 [
   {
-    "image": "../../../../../../assets/images/blog-img.png",
-    "date": "04 Jan 2021",
-    "title": "Blog post title one",
-    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor..."
+    "Image": "../../../../../../assets/images/blog-img.png",
+    "Date": "04 Jan 2021",
+    "Title": "Blog post title one",
+    "Summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor..."
   },
   {
-    "image": "../../../../../../assets/images/blog-img-2.png",
-    "date": "04 Jan 2021",
-    "title": "Blog post title one",
-    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor..."
+    "Image": "../../../../../../assets/images/blog-img-2.png",
+    "Date": "04 Jan 2021",
+    "Title": "Blog post title one",
+    "Summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor..."
   },
   {
-    "image": "../../../../../../assets/images/blog-img-3.png",
-    "date": "04 Jan 2021",
-    "title": "Blog post title one",
-    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor..."
+    "Image": "../../../../../../assets/images/blog-img-3.png",
+    "Date": "04 Jan 2021",
+    "Title": "Blog post title one",
+    "Summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor..."
   },
   {
-    "image": "../../../../../../assets/images/blog-img-4.png",
-    "date": "04 Jan 2021",
-    "title": "Blog post title one",
-    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor..."
+    "Image": "../../../../../../assets/images/blog-img-4.png",
+    "Date": "04 Jan 2021",
+    "Title": "Blog post title one",
+    "Summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor..."
   }
 ]
