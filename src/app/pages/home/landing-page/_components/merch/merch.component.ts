@@ -15,7 +15,6 @@ import { ApiService } from 'src/app/_services';
   styleUrls: ['./merch.component.less']
 })
 export class MerchComponent implements OnInit {
-  merchList: any = [];
   featuredMerch: any = [];
 
   constructor(
