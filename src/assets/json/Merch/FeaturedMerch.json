@@ -1,0 +1,34 @@
+[
+  {
+    "MerchID": "1",
+    "Category": "CLOTHING",
+    "Name": "Product Name",
+    "Price": "20.00",
+    "Image": "../../../../../../assets/images/merch-1.png",
+    "Description": "Description 1"
+  },
+  {
+    "MerchID": "2",
+    "Category": "CD",
+    "Name": "Product Name",
+    "Price": "20.00",
+    "Image": "../../../../../../assets/images/merch-2.png",
+    "Description": "Description 1"
+  },
+  {
+    "MerchID": "3",
+    "Category": "CLOTHING",
+    "Name": "Product Name",
+    "Price": "20.00",
+    "Image": "../../../../../../assets/images/merch-3.png",
+    "Description": "Description 1"
+  },
+  {
+    "MerchID": "4",
+    "Category": "CLOTHING",
+    "Name": "Product Name",
+    "Price": "20.00",
+    "Image": "../../../../../../assets/images/merch-4.png",
+    "Description": "Description 1"
+  }
+]
